@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auctions</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.filter-container, .auction-items-container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.filter-container form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-container form label {
+    flex: 1 1 100%;
+}
+
+.filter-container form input {
+    flex: 1 1 calc(25% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.filter-container form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-container form button:hover {
+    background-color: #0056b3;
+}
+
+.auction-items-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.auction-item {
+    background-color: white;
+    width: calc(25% - 20px);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auction-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.auction-item h3, .auction-item p, .auction-item span {
+    margin: 10px 0;
+}
+
+.auction-item button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.auction-item button:hover {
+    background-color: #218838;
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html"><img style="height: 100px; width: 100px;" src="imgs/logo.png" alt="logo"/></a>
+            <h4 class="logoName" style="text-align: center;">Murphy Merchants Auctioneers</h4>
+        </div>
+        <ul class="nav-links">
+            
+          <li>
+            <a href="index.html">Home</a>
+        </li>
+          <li>
+            <a href="about_us.html">About Us</a>
+        </li>
+        <!-- <li>
+            <a href="whyus.html">Why Us?</a>
+        </li> -->
+        <!-- <li>
+            <a href="ourvalues.html">Our Values</a>
+        </li> -->
+        <li>
+            <a href="Companyprofile.html">Company Profile</a>
+        </li>
+        <li>
+            <a href="contactus.html">Contact Us</a>
+        </li>
+            
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+    <div class="filter-container">
+        <h2>Filter Items</h2>
+        <form id="filterForm">
+            <label for="filterCategory">Category:</label>
+            <input type="text" id="filterCategory" name="filterCategory">
+
+            <label for="filterPriceRange">Price Range:</label>
+            <input type="number" id="filterPriceMin" name="filterPriceMin" placeholder="Min">
+            <input type="number" id="filterPriceMax" name="filterPriceMax" placeholder="Max">
+
+            <label for="filterAuctionDate">Auction Date:</label>
+            <input type="date" id="filterAuctionDate" name="filterAuctionDate">
+
+            <label for="filterItemCondition">Item Condition:</label>
+            <input type="text" id="filterItemCondition" name="filterItemCondition">
+
+            <button type="submit">Filter</button>
+        </form>
+    </div>
+
+    <div class="auction-items-container" id="auctionItemsContainer">
+        <!-- Auction items will be inserted here dynamically -->
+    </div>
+
+    <footer id="footer">
+
+        <div class="container__footer">
+            <div class="box__footer">
+                <div class="logo">
+                    <img src="imgs/logo.png" style="height: 300px; width: 300px;" alt="logo">
+                </div>
+                
+            </div>
+            <div class="box__footer">
+                <h2>Contact Us</h2>
+                <p>P.O.BOX 3070-80100</p>
+                <p>MOMBASA</p>
+              <b>Mobile</b>  <p>0732890305 and 0736670986 </p>
+              <b>Email</b>  <p>Murphyauctions22@gmail.com</p>
+            </div>
+      
+            <div class="box__footer">
+                <h2>Quick Links</h2>
+                <a href="about_us.html">Mission</a>
+                <a href="about_us.html">Vision</a>
+                <a href="about_us.html">Core Values</a>
+                      
+            </div>
+      
+            <div class="box__footer">
+                <h2>Social Media</h2>
+                <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                
+            </div>
+      
+        </div>
+      
+        <div class="box__copyright">
+            <hr>
+           
+            <p>Murphy Merchants Auctioneers © 2024 | All Rights Reserved</p>
+        </div>
+      </footer>
+
+    <script src="auction.js"></script>
+</body>
+</html>

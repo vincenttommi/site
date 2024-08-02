@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Panel - Add Auction Item</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 50%;
+    margin: 50px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+        <a href="index.html"><img style="height: 100px; width: 100px;" src="imgs/logo.png" alt="logo"/></a>
+        <h4 class="logoName" style="text-align: center;">Murphy Merchants Auctioneers</h4>
+    </div>
+    <ul class="nav-links">
+        
+      <li>
+        <a href="index.html">Home</a>
+    </li>
+      <li>
+        <a href="about_us.html">About Us</a>
+    </li>
+    <!-- <li>
+        <a href="whyus.html">Why Us?</a>
+    </li> -->
+    <!-- <li>
+        <a href="ourvalues.html">Our Values</a>
+    </li> -->
+    <li>
+        <a href="Companyprofile.html">Company Profile</a>
+    </li>
+    <li>
+        <a href="contactus.html">Contact Us</a>
+    </li>
+        
+    </ul>
+    <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+</nav>
+    
+    <div class="form-container">
+        <h2>Add Auction Item</h2>
+        <form id="auctionForm">
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+
+            <label for="startingPrice">Starting Price:</label>
+            <input type="number" id="startingPrice" name="startingPrice" required>
+
+            <button type="submit">Add Item</button>
+        </form>
+    </div>
+
+
+<footer id="footer">
+
+    <div class="container__footer">
+        <div class="box__footer">
+            <div class="logo">
+                <img src="imgs/logo.png" style="height: 300px; width: 300px;" alt="logo">
+            </div>
+            
+        </div>
+        <div class="box__footer">
+            <h2>Contact Us</h2>
+            <p>P.O.BOX 3070-80100</p>
+            <p>MOMBASA</p>
+          <b>Mobile</b>  <p>0732890305 and 0736670986 </p>
+          <b>Email</b>  <p>Murphyauctions22@gmail.com</p>
+        </div>
+  
+        <div class="box__footer">
+            <h2>Quick Links</h2>
+            <a href="about_us.html">Mission</a>
+            <a href="about_us.html">Vision</a>
+            <a href="about_us.html">Core Values</a>
+                  
+        </div>
+  
+        <div class="box__footer">
+            <h2>Social Media</h2>
+            <a href="https://www.facebook.com" target="_blank"> <i class="fab fa-facebook-square"></i> Facebook</a>
+            
+        </div>
+  
+    </div>
+  
+    <div class="box__copyright">
+        <hr>
+       
+        <p>Murphy Merchants Auctioneers © 2024 | All Rights Reserved</p>
+    </div>
+  </footer>
+    <script src="add_item.html"></script>
+</body>
+</html>
